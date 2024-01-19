@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+      <div class="col-lg-12 position-absolute top-50 start-50 translate-middle text-center">
+        <h1 class="mb-5">Enter Your Details</h1>
+        <form>
+          <input type="text" [(ngModel)]="signupObj.userName"  name="txt" placeholder="Enter Your UserName">
+          <br><br>
+          <input type="text" [(ngModel)]="signupObj.email"  name="email" placeholder="Enter Your Email">
+          <br><br>
+          <input type="text" [(ngModel)]="signupObj.password"  name="password" placeholder="Enter Your password">
+          <br><br>
+          <button class="btn btn-dark" [disabled]="!areInputsValid()" routerLink="" (click)="onSignup()">Create Account</button>
+        </form>
+      </div>
+    </div>
+  </div>

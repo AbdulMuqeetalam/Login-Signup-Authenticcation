@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+      <div class="col-lg-12 position-absolute top-50 start-50 translate-middle text-center">
+        <h1 class="mb-5">Login/Signup Authentication with Local Storage</h1>
+        <form #basicForm="ngForm" >
+          <input type="text" [(ngModel)]="loginObj.email" required="" name="email" placeholder="Enter Your Email">
+          <br><br>
+          <input type="text" [(ngModel)]="loginObj.password" required=""  name="password" placeholder="Enter Your password">
+          <br><br>
+          <a class="btn btn-dark" (click)="onLogin()">Login</a>
+          <a routerLink="signup" class="btn btn-secondary" >Signup</a>
+        </form>
+      </div>
+    </div>
+  </div>
